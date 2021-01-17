@@ -181,9 +181,9 @@ address {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid black;
-  background-image: li;
+  outline: 1px solid black; 
   background-image: url("../optim-backgrounds/overlay\ .jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4);) 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -223,12 +223,46 @@ address {
 .advantages {
   display: flex;
 }
+
+
 .advantages .item + .item {
   margin-left: 30px;
 }
 .main-discription {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.advantages-title {
+  margin-top: 30px;
+}
+.item-antenna::before, 
+.item-clock::before,
+.item-vector::before, 
+.item-astronaut::before{
+  display: block;
+  content: ""; 
+  height: 120px;
+  width: 270px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+}
+
+.item-antenna::before {
+  background-image: url(../optim-backgrounds/antenna\ 1.svg);
+}
+.item-clock::before {
+  background-image: url(../optim-backgrounds/clock\ 1.svg);
+}
+.item-vector::before {
+  background-image: url(../optim-backgrounds/diagram\ 1.svg);
+}
+.item-astronaut::before {
+  background-image: url(../optim-backgrounds/astronaut\ 1.svg);
 }
 
 .work-images {
@@ -310,6 +344,18 @@ address {
   text-align: center;
   background-color: var(--primary-white-color);
 }
+.socials {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.social-icons{
+  height: 20px;
+  width: 20px;
+  margin: 24px;
+  
+}
+
 .team-images h2 {
   margin-bottom: 50px;
 }
