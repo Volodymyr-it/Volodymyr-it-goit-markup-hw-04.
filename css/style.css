@@ -181,9 +181,9 @@ address {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid black; 
+  outline: 1px solid black;
   background-image: url("../optim-backgrounds/overlay\ .jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4);) 
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -220,10 +220,19 @@ address {
 }
 
 /* наши приимущества */
+.advantages-icon {
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+}
+.advantages-icon svg {
+  width: 70px;
+  height: 70px;
+}
+
 .advantages {
   display: flex;
 }
-
 
 .advantages .item + .item {
   margin-left: 30px;
@@ -234,35 +243,6 @@ address {
 }
 .advantages-title {
   margin-top: 30px;
-}
-.item-antenna::before, 
-.item-clock::before,
-.item-vector::before, 
-.item-astronaut::before{
-  display: block;
-  content: ""; 
-  height: 120px;
-  width: 270px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center; 
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--second-background-color);
-  border-radius: 4px;
-}
-
-.item-antenna::before {
-  background-image: url(../optim-backgrounds/antenna\ 1.svg);
-}
-.item-clock::before {
-  background-image: url(../optim-backgrounds/clock\ 1.svg);
-}
-.item-vector::before {
-  background-image: url(../optim-backgrounds/diagram\ 1.svg);
-}
-.item-astronaut::before {
-  background-image: url(../optim-backgrounds/astronaut\ 1.svg);
 }
 
 .work-images {
@@ -319,6 +299,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 /* team */
 .team-images h3 {
@@ -327,6 +308,7 @@ address {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-top: 30px;
 }
 .team-images p {
   color: var(--main-text-color);
@@ -344,27 +326,74 @@ address {
   text-align: center;
   background-color: var(--primary-white-color);
 }
+.social {
+  display: inline-block;
+  fill: #afb1b8;
+  padding: 12px;
+}
 .socials {
   display: flex;
-  padding: 0;
-  margin: 0;
-}
-.social-icons{
-  height: 20px;
-  width: 20px;
-  margin: 24px;
-  
+  justify-content: center;
+  padding: 0 30px 32px;
 }
 
-.team-images h2 {
-  margin-bottom: 50px;
+.social + .social {
+  margin-left: 10px;
 }
-.team-images h3 {
-  margin-top: 30px;
+.social-icons {
+  height: 20px;
+  width: 20px;
 }
+.social:hover,
+.social-icons:hover,
+.social-icons:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+  border-color: var(--accent-color);
+}
+
 .team-images p {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+/* Постійні клієнти */
+.customers {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logotyp + .partner-logotyp {
+  margin-left: 30px;
+}
+.logotyp {
+  display: inline-block;
+}
+
+.logotyp {
+  box-sizing: border-box;
+  padding-top: ;
+  height: 90px;
+  width: 170px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+}
+
+.logotyp:hover,
+.logotyp:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+.regular-customers {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
 }
 
 /* footer */
@@ -396,7 +425,7 @@ footer {
   padding: 6px 22px;
   border: 0px;
 }
-.filter-butons .button-item + .button-item {
+.button-item + .button-item {
   margin-left: 9px;
 }
 .galeria-images {
