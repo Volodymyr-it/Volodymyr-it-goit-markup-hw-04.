@@ -91,8 +91,7 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-.header-fedback + .header-fedback {
+.nav-item .header-fedback + .header-fedback {
   margin-left: 50px;
 }
 .header-fedback {
@@ -102,8 +101,6 @@ header {
   fill: var(--main-text-color);
 }
 .envelope-icon {
-  height: 12px;
-  width: 16px;
   margin-right: 10px;
 }
 .smarphone-icon {
@@ -249,7 +246,6 @@ footer address {
 .main-section {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--dark-background-color);
   text-align: center;
   letter-spacing: 0.06em;
 }
