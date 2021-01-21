@@ -256,7 +256,7 @@ footer address {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
-
+  background: #1d1d1c;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0),
