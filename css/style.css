@@ -222,8 +222,8 @@ footer address {
   border-radius: 50%;
 }
 
-.footer-accent :hover,
-.footer-accent :focus {
+.footer-accent:hover .social-background,
+.footer-accent:focus .social-background {
   background-color: var(--accent-color);
 }
 .footer-icon {
